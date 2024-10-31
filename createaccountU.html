@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user_Registration</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="create.css" />
+</head>
+
+<body>
+    <div class="user_login_main">
+        <div class="heroimg">
+            <img src="img/11.jpg" />
+            <div class="black"></div>
+            <div class="front_glass">
+                <h1 class="page-heading">USER REGISTRATION FORM</h1>
+                <table>
+                    <form action="logic.php" method="post">
+                        <tr>
+                            <td class="subpage">Name:</td>
+                            <td><input class="inputtext" type="text" placeholder="Enter Your Name" name="uname" autofocus
+                                    required /></td>
+                        </tr>
+
+                        <tr>
+                            <td class="subpage">Email Id:</td>
+                            <td><input class="inputtext" type="email" placeholder="Enter Your valid Email-Id"
+                                    name="uemail" autofocus /></td>
+                        </tr>
+
+                        <tr>
+                            <td class="subpage">Gender:</td>
+                            <td><input type="radio" value="m" name="gender">Male
+                                <input type="radio" value="f" name="gender">Female
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="subpage">Date of Birth:</td>
+                            <td><input class="inputtext" type="date" placeholder="Enter Your valid Email-Id"
+                                    name="udob" autofocus /></td>
+                        </tr>
+
+                        <tr>
+                            <td class="subpage">Address:</td>
+                            <td><textarea class="inputtext" placeholder="Enter Your Address" cols="30" rows="6"
+                                    name="uaddr" autofocus required ></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td class="subpage">Phone Number:</td>
+                            <td><input class="inputtext" type="tel" placeholder="Enter Phone Number here" name="upno" autofocus
+                                    required /></td>
+                        </tr>
+
+                        <tr>
+                            <td class="subpage">Student ID:</td>
+                            <td><input class="inputtext" type="text" placeholder="Enter ID Number" name="uid" autofocus
+                                    required /></td>
+                        </tr>
+
+                        <tr>
+                            <td class="subpage">Set Password:</td>
+                            <td><input class="inputtext" type="password" placeholder="Enter 4 digit password here"
+                                    name="upass" autofocus required /></td>
+                        </tr>
+                        <tr>
+                           <td><input style="--clr:#AFB9BA" class="hero-button" type="submit" /></td>
+                        </tr> 
+                    </form>
+                </table>
+
+
+                <!-- <form action="logic.php" method="post">
+                    <h1 class="page-heading">USER REGISTRATION FORM</h1>
+                    <table border="3px solid aqua" action="logic.php" method="post">
+                        <tr>
+                            <td bgcolor="green" class="subpage">Name:</td>
+                            <td bgcolor="blue"><input class="inputtext" type="text" placeholder="Enter Your Name" name="uname"
+                                    required /></td>
+                        </tr>
+
+                        <tr>
+                            <td class="subpage">Email Id:</td>
+                            <td><input class="inputtext" type="email" placeholder="Enter Your valid Email-Id"
+                                    name="uemail" /></td>
+                        </tr>
+
+                        <tr>
+                            <td class="subpage">Gender:</td>
+                            <td><input type="radio" value="m" name="gender">Male
+                                <input type="radio" value="f" name="gender">Female
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="subpage">Date of Birth:</td>
+                            <td><input class="inputtext" type="date" placeholder="Enter Your valid Email-Id"
+                                    name="udob" /></td>
+                        </tr>
+
+                        <tr>
+                            <td class="subpage">Address:</td>
+                            <td><textarea class="inputtext" placeholder="Enter Your Address" cols="30" rows="6"
+                                    name="uaddr" required></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td class="subpage">Phone Number:</td>
+                            <td><input class="inputtext" type="tel" placeholder="Enter Phone Number here" name="upno"
+                                    required /></td>
+                        </tr>
+
+                        <tr>
+                            <td class="subpage">Student ID:</td>
+                            <td><input class="inputtext" type="text" placeholder="Enter ID Number" name="uid"
+                                    required /></td>
+                        </tr>
+
+                        <tr>
+                            <td class="subpage">Set Password:</td>
+                            <td><input class="inputtext" type="password" placeholder="Enter 4 digit password here"
+                                    name="upass" required /></td>
+                        </tr>
+                        <tr>
+                           <td><input style="--clr:#AFB9BA" class="hero-button" type="submit" /></td>
+                        </tr> -->
+
+
+
+                <!--
+                        <div class="subpage">
+                            <p>Name:</p>
+                            <input class="inputtext" type="text" placeholder="Enter Your Name" name="uname" required />
+                            <br /><br />
+                            <p>Email Id:</p>
+                            <input class="inputtext" type="email" placeholder="Enter Your valid Email-Id"
+                                name="uemail" />
+                            <br /><br />
+                            <p>Gender:</p>
+                            <div class="radiobutton">
+                                <input type="radio" value="m" name="gender">Male
+                                <input type="radio" value="f" name="gender">Female
+                            </div>
+                            <br /><br />
+                            <p>Date of Birth:</p>
+                            <input class="inputtext" type="date" placeholder="Enter Your valid Email-Id" name="udob" />
+                            <br /><br />
+                            <p>Address:</p>
+                            <textarea class="inputtext" placeholder="Enter Your Address" cols="30" rows="6" name="uaddr"
+                                required></textarea>
+                            <br /><br />
+                            <p>Phone Number:</p>
+                            <input class="inputtext" type="tel" placeholder="Enter Phone Number here" name="upno"
+                                required />
+                            <br /><br />
+                            <p>Student ID:</p>
+                            <input class="inputtext" type="text" placeholder="Enter ID Number" name="uid" required />
+                            <br /><br />
+                            <p>Set Password:</p>
+                            <input class="inputtext" type="password" placeholder="Enter 4 digit password here"
+                                name="upass" required />
+                            <br /><br />
+                            <input style="--clr:#AFB9BA" class="hero-button" type="submit" />
+                        </div>
+
+                        -->
+                <!-- </table> -->
+                <!-- </form> -->
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
